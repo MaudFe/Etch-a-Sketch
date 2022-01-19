@@ -15,6 +15,20 @@ document.querySelector(".button").addEventListener("click", () => {
   updateGrid(userPrompt);
 });
 
+
+document.querySelector('.clear').addEventListener('click', () => {
+  let squares = document.querySelectorAll(".square");
+  squares.forEach(
+    square => square.style.backgroundColor = ""
+  );
+})
+
+
+document.querySelector(".reset").addEventListener("click", () => {
+  location.reload();
+});
+
+
 createSquares = () => {
   for (let i = 0; i < 256; i++) {
     const div = document.createElement("div");

@@ -10,18 +10,20 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 50px;
 }
 
 .main-container {
   display: grid;
   grid-template-columns: 1fr 3fr;
   grid-template-rows: 1fr auto;
+  justify-items: center;
 }
 
 .buttons {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 .drawing-grid {
@@ -36,4 +38,9 @@ body {
 .square {
   background-color: #fff;
   border: 1px solid #000;
+}
+
+button {
+  height: 30px;
+  width: auto;
 }
